@@ -13,9 +13,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SwipeMatch | ホストクラブ向けマッチング体験アプリ",
+  title: "SwipeMatch",
   description:
-    "お客様の好みを可視化し、キャストとのミスマッチを減らすホストクラブ向けマッチング体験アプリ。",
+    "来店直後にお客様の好みを直感的に把握し、ミスマッチを減らすためのマッチングアプリ",
+  icons: {
+    icon: "/swipematch_logo.png",
+    apple: "/swipematch_logo.png",
+  },
 };
 
 export default function RootLayout({
