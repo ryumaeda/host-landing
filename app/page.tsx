@@ -72,19 +72,17 @@ export default function Home() {
               >
                 料金を見る
               </a>
-              <div className="flex flex-col items-start gap-2 sm:items-center">
-                <a
-                  href="https://demo-swipematch.vercel.app/cast/ipad1?tableId=1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex h-12 items-center justify-center rounded-full border border-black/15 bg-white/40 px-6 text-sm font-semibold text-black transition hover:border-black/35 hover:bg-white/80"
-                >
-                  デモアプリを開く
-                </a>
-                <span className="rounded-full border border-black/10 bg-white/45 px-3 py-1 text-[11px] font-medium tracking-[0.04em] text-black/48">
+              <a
+                href="https://demo-swipematch.vercel.app/cast/ipad1?tableId=1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex min-h-12 flex-col items-center justify-center rounded-full border border-black/15 bg-white/40 px-6 py-2 text-sm font-semibold text-black transition hover:border-black/35 hover:bg-white/80"
+              >
+                <span>デモアプリを開く</span>
+                <span className="text-[11px] font-medium tracking-[0.04em] text-black/48">
                   ※ipad推奨
                 </span>
-              </div>
+              </a>
             </div>
           </div>
 
@@ -222,7 +220,7 @@ export default function Home() {
               </div>
             </div>
             <p className="mt-6 text-center text-xs leading-6 text-black/52">
-              ※ 初期導入費用には、アプリ構築とお客様ロゴデザインの適用など、導入準備に必要な作業が含まれます。
+              ※ 初期導入費用には、アプリ構築とお客様ロゴデザインの適用作業が含まれます。
             </p>
           </div>
         </div>
