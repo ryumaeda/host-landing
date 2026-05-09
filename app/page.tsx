@@ -72,12 +72,19 @@ export default function Home() {
               >
                 料金を見る
               </a>
-              <a
-                href="https://demo-swipematch.vercel.app/cast/ipad1?tableId=1"
-                className="inline-flex h-12 items-center justify-center rounded-full border border-black/15 bg-white/40 px-6 text-sm font-semibold text-black transition hover:border-black/35 hover:bg-white/80"
-              >
-                デモアプリを開く
-              </a>
+              <div className="flex flex-col items-start gap-2 sm:items-center">
+                <a
+                  href="https://demo-swipematch.vercel.app/cast/ipad1?tableId=1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex h-12 items-center justify-center rounded-full border border-black/15 bg-white/40 px-6 text-sm font-semibold text-black transition hover:border-black/35 hover:bg-white/80"
+                >
+                  デモアプリを開く
+                </a>
+                <span className="rounded-full border border-black/10 bg-white/45 px-3 py-1 text-[11px] font-medium tracking-[0.04em] text-black/48">
+                  ※ipad推奨
+                </span>
+              </div>
             </div>
           </div>
 
@@ -207,13 +214,11 @@ export default function Home() {
                 <div className="absolute left-0 top-0 h-1 w-full bg-[linear-gradient(90deg,#a8893c,#ead59a,#a8893c)]" />
                 <div className="text-xs font-semibold tracking-[0.24em] text-black/45">初期導入費用</div>
                 <div className="mt-5 text-[2.55rem] font-medium leading-none tracking-[-0.025em] text-black/90 sm:text-[2.9rem]">¥50,000</div>
-                <div className="mt-3 text-xs text-black/42">導入時のみ</div>
               </div>
               <div className="relative overflow-hidden rounded-[28px] border border-black/10 bg-white/78 p-7 shadow-[0_18px_55px_rgba(0,0,0,0.08)]">
                 <div className="absolute left-0 top-0 h-1 w-full bg-[linear-gradient(90deg,#a8893c,#ead59a,#a8893c)]" />
                 <div className="text-xs font-semibold tracking-[0.24em] text-black/45">月額</div>
                 <div className="mt-5 text-[2.55rem] font-medium leading-none tracking-[-0.025em] text-black/90 sm:text-[2.9rem]">¥15,000</div>
-                <div className="mt-3 text-xs text-black/42">継続利用・運用費用</div>
               </div>
             </div>
             <p className="mt-6 text-center text-xs leading-6 text-black/52">
