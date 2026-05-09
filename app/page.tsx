@@ -143,7 +143,7 @@ export default function Home() {
       </section>
 
       <section className="px-6 py-24 sm:px-10 lg:px-16">
-        <div className="mx-auto grid max-w-7xl items-start gap-12 lg:grid-cols-[0.85fr_1.15fr]">
+        <div className="relative mx-auto grid max-w-7xl items-start gap-12 lg:grid-cols-[0.85fr_1.15fr]">
           <div>
             <div className="text-sm font-semibold tracking-[0.28em] text-black/45">
               PRODUCT
@@ -153,7 +153,7 @@ export default function Home() {
               <span className="block text-black/56">好みを静かに把握する。</span>
             </h2>
           </div>
-          <div className="grid gap-4 sm:grid-cols-2">
+          <div className="relative grid gap-4 sm:grid-cols-2">
             {productItems.map((item) => (
               <article key={item.title} className="group rounded-[28px] border border-black/10 bg-white/55 p-6 shadow-[0_18px_60px_rgba(0,0,0,0.06)]">
                 <div className="mb-5 grid h-11 w-11 place-items-center rounded-2xl border border-black/10 bg-[#111] text-white">
@@ -172,18 +172,17 @@ export default function Home() {
                 </div>
                 <div className="font-semibold">{item.title}</div>
                 <p className="mt-3 text-sm leading-7 text-black/52">{item.text}</p>
-                <p className="mt-4 text-xs text-black/45">カードにカーソルを当てると画面例を表示</p>
-                <div className="pointer-events-none fixed bottom-5 right-5 z-50 hidden w-[min(42vw,520px)] rounded-2xl border border-black/15 bg-white/95 p-3 shadow-[0_20px_55px_rgba(0,0,0,0.22)] backdrop-blur-sm md:group-hover:block">
+                <div className="pointer-events-none absolute right-[calc(100%+1rem)] top-0 z-20 hidden h-full w-[min(38vw,500px)] flex-col rounded-2xl border border-black/15 bg-white/95 p-3 shadow-[0_20px_55px_rgba(0,0,0,0.18)] backdrop-blur-sm lg:group-hover:flex">
                   <p className="mb-2 text-xs font-semibold tracking-[0.08em] text-black/60">
                     {item.title}
                   </p>
-                  <div className="relative aspect-[4/3] overflow-hidden rounded-xl border border-black/10 bg-[#f1efea]">
+                  <div className="relative min-h-0 flex-1 overflow-hidden rounded-xl border border-black/10 bg-[#f1efea]">
                     <Image
                       src={item.previewSrc}
                       alt={item.previewAlt}
                       fill
                       className="object-contain"
-                      sizes="(max-width: 1280px) 42vw, 520px"
+                      sizes="(max-width: 1280px) 38vw, 500px"
                       preload
                     />
                   </div>
